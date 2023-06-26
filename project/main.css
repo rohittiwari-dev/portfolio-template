@@ -1,0 +1,450 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,#7199F9 20% , #A371F9 ),radial-gradient(circle at top left,#7199F9,#A371F9 );
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 2px solid #4458dc;
+    background-image: none;
+    background-color: lightskyblue;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.load .img{
+    width: 10%;
+}
+
+
+
+.search-bar
+{
+    font-size: 120%;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    filter: drop-shadow(1px 1px 1px #372557);
+}
+.search-label
+{
+    background-image: linear-gradient(to right,#e2c6ff 30% , #caf0f8 ),radial-gradient(circle at top left,#caf0f8,#e2c6ff );
+    min-width: 40%;
+    display: flex;
+    border-radius: 3vh;
+    align-items: center;
+}
+#search
+{
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 3vh 0 0 3vh ;
+    background: none;
+    color: #222;
+    font-size: 1.5rem;
+    text-space: 2;
+    text-align: center;
+    text-shadow: 0 1px 1px navy;
+    border: 0.01rem inset slateblue;
+
+}
+#search:focus
+{
+    outline: none;
+    border: 0.12rem inset #A371F9;
+}
+.search-btn
+{
+    height: 2.55rem;
+    width: 20%;
+    border-radius:  0 3vh 3vh 0  ;
+    color: lightcyan;
+    text-align: center;
+    text-shadow: 0 1px 1px navy;
+    border: 0.01rem inset slateblue;
+    border-left: none;
+    background-image: linear-gradient(to right,#7199F9 20% , #A371F9 ),radial-gradient(circle at top left,#7199F9,#A371F9 );
+    transition: 0.2s all ease;
+}
+.search-btn:hover
+{
+    color: lightpink;
+    background-image: linear-gradient(135deg, rgba(163, 0, 62, 0.562), rgba(172, 2, 187, 0.664));
+}
+
+
+
+header{
+    width: 100%;
+    overflow: hidden;
+}
+.nav-section{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to top,#fff 80% , #BEF0FB 20%);
+    align-items: center;
+}
+
+
+.logo{
+    margin-right: 20px;
+    width: 35%;
+    color: #fff;
+    background-image: linear-gradient(#7199F9 20% , #A371F9 );
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(1px 2px 4px #372557);
+}
+
+.logo img{
+    padding: 5px;
+    width: 30%;
+    animation: custom  2s  linear infinite alternate;
+    filter: drop-shadow(1px 1px 1px #372557);
+}
+
+@keyframes custom {
+    from
+    {
+        padding-left: 10%;
+    }
+    to {
+        padding-right: 10%;
+    }
+}
+
+nav{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+    text-shadow: 1px 1px 1px #372557;
+}
+nav a:hover{
+    color: slateblue;
+}
+
+nav a:first-child{
+    color: royalblue;
+}
+
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: -4%;
+    width: 0;
+    height: 2px;
+    border-bottom: 3px solid slateblue;
+    transition: all 0.2s linear;
+}
+
+nav a:hover:before{
+    width: 110%;
+}
+
+/*head Section media Query*/
+
+@media (max-width: 990px) {
+    .nav-section{
+        flex-direction: column;
+    }
+    .nav-section .logo
+    {
+        width: 110%;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 690px) {
+    .nav-section{
+        flex-direction: column;
+        height: 5rem;
+    }
+    .logo
+    {
+        height: 3rem;
+        padding: 0 2rem;
+    }
+    .logo img
+    {
+        width: 15rem;
+    }
+    .nav-section .logo
+    {
+        width: 110%;
+        margin-bottom: 1rem;
+    }
+    .nav-section nav
+    {
+        display: none;
+    }
+}
+/* ************ MY PROJECT SECTION ***************/
+#section-2{
+    background-image: linear-gradient(to left,#fff 80%, #BEF0FB 90%);
+    filter: drop-shadow( 0 1px 2px #372557);
+    display:grid;
+    place-items: center;
+    width:100%;
+    overflow: hidden;
+    row-gap: 3rem;
+}
+.search-bar
+{
+    place-self: self-start;
+    width:100%;
+    text-align: center;
+}
+.project-grid
+{
+    width: 90% ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    place-items: center;
+    min-height: 40rem;
+}
+.project-cards
+{
+    background: white;
+    box-shadow: 0.1rem 0.1rem 0.6rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    width: 18rem;
+    height: 20rem;
+    display: grid;
+    transition: .3s transform ease;
+    overflow: hidden;
+    border: 0.1rem outset #4458dc;
+}
+.project-cards:hover
+{
+    box-shadow: 0.2rem 0.2rem 0.8rem rgba(0,0,0,0.2);
+    transform: scale(1.04);
+}
+
+.project-cards .card-img
+{
+    width:100%
+}
+.project-cards .card-label
+{
+    width:100%;
+    color:deepskyblue;
+    padding: 0 1rem;
+    font-size: 120%;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.card-label h1
+{
+    color: rgb(118,85,225);
+    margin-bottom: 1rem;
+    font-size: 120%;
+}
+.card-bottom
+{
+    width: 100%;
+    background-image: linear-gradient(to right,#7199F9 20% , #A371F9 ),radial-gradient(circle at top left,#7199F9,#A371F9 );
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    place-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height:3.3rem;
+    text-decoration: none;
+}
+.card-bottom span{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-bottom:hover,.card-bottom:active{
+    background-image: linear-gradient(135deg, rgba(163, 0, 62, 0.562), rgba(172, 2, 187, 0.664));
+    text-shadow: 1px 1px 2px navy;
+    border-top: outset 0.12rem  #4458dc;
+}
+.card-bottom:hover span,.card-bottom:active span{
+    text-shadow: 1px 1px 2px navy;
+    margin-left: 1.5rem;
+    margin-top: -0.12rem;
+}
+
+/*My Project Section media Query*/
+@media (max-width: 1335px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 990px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 690px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-head h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+
+/*  -=------------MY PROJECT Section-------------*/
+
+/* ---------------------Footer SECTION----------------------- */
+footer{
+    filter: drop-shadow(-1px -2px 6px navy );
+    padding: 1rem;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient(to right,#e2c6ff 30% , #caf0f8 ),radial-gradient(circle at top left,#caf0f8,#e2c6ff );
+}
+
+footer .f-top{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+}
+.fot-content
+{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.f-top .img{
+    width: 50px;
+    margin-left: 1rem;
+    filter: drop-shadow(1px 1px 2px navy);
+}
+.back-base-1{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.back-base-1 a{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+    text-shadow: 0 1px 1px navy;
+    background:none;
+    width: 6.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: none;
+    margin: 0 ;
+}
+.back-base-1 a i:hover{
+    transform: scale(1);
+}
+.f-bottom{
+    height: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.f-bottom h4{
+    margin-left: 3px;
+    color:  #222;
+    text-shadow: 0 1px 1px rgba(118,85,225,.7);
+}
+.f-bottom .fa-copyright{
+    color:  #222;
+    text-shadow: 0 1px 1px rgba(118,85,225,.7);
+}
+
+
+footer .nav{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+}
+
+footer .nav a{
+    position: relative;
+    text-shadow: 0 1px 1px navy;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: #222;
+    transition: all 0.2s linear;
+}
+
+.nav a:hover{
+    color: #7199F9;
+    transform: scale(1.2);
+}
+
+
+/*footer Section media Query*/
+
+@media (max-width: 990px) {
+    .back-base-1
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer .nav{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media (max-width: 690px) {
+    footer .f-top
+    {
+        grid-template-columns: none;
+    }
+    .back-base-1
+    {
+        grid-template-columns: none;
+    }
+    footer .nav{
+        grid-template-columns: none;
+    }
+    .img{
+        display: none;
+    }
+}

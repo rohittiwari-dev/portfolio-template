@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../media/logo.png">
+    <meta name="description" content="This is a Website for Tech and Gaming Youtuber Mr Rohit Tiwari. Website for Youtube Channel GT Hunter, Here all the Tech and Gaming Related information and Download links for all stuff used in the videos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="search.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body onload="loader()">
+
+
+<!----------------------Loader Of The Website--------------------------------->
+<div class="load" id='loading'>
+    <img class="img" src="../media/loader.gif" alt="" />
+</div>
+<!----------------------Loader Of The Website--------------------------------->
+
+
+<section id="section-2">
+    <header>
+        <section class="nav-section">
+            <div class="logo">
+                <img  src="../media/signature.png" alt="Rohit Tiwari" />
+            </div>
+            <nav>
+                <a href="../index.html">HOME</a>
+                <a href="https://www.youtube.com">YOUTUBE</a>
+                <a href="#section-2">PROJECTS</a>
+                <a href="">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </section>
+    </header>
+    <div class="search-bar">
+        <label class="search-label">
+            <input onkeydown="search()" onkeyup="search()" type="text" id="search" placeholder="Type to Search"><button onclick="search()" class="search-btn"><i class="fab fa-searchengin fa-2x"></i></button>
+        </label>
+    </div>
+    <main class="project-grid">
+        <article class="project-cards">
+            <img class="card-img" src="../media/library.png" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Library Management System </h1>
+                Java Project
+            </div>
+            <a href="../project/projects.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/Bank.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Bank Management System </h1>
+                C++ Project
+            </div>
+            <a href="../project/projects.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/jarvisai.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Jarvis AI System </h1>
+                Python Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/elect.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">Student Council Election System</h1>
+                Java Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/excel.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">Billing System in MS Excel</h1>
+                Microsoft Excel
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/Website.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">My Website Source Code</h1>
+                HTML,CSS,JS ,PHP
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/library.png" alt="">
+            <div class="card-label">
+                <h1 class="title3">Library Management System</h1>
+                Java Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/library.png" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Library Management System </h1>
+                Java Project
+            </div>
+            <a href="../project/projects.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/Bank.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Bank Management System </h1>
+                C++ Project
+            </div>
+            <a href="../project/projects.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/jarvisai.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3"> Jarvis AI System </h1>
+                Python Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/elect.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">Student Council Election System</h1>
+                Java Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/excel.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">Billing System in MS Excel</h1>
+                Microsoft Excel
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/Website.jpg" alt="">
+            <div class="card-label">
+                <h1 class="title3">My Website Source Code</h1>
+                HTML,CSS,JS ,PHP
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+        <article class="project-cards">
+            <img class="card-img" src="../media/library.png" alt="">
+            <div class="card-label">
+                <h1 class="title3">Library Management System</h1>
+                Java Project
+            </div>
+            <a href="../project/sec.html" class="card-bottom">Visit to <span>&rarr;</span></a>
+        </article>
+    </main>
+
+<!---------------------Footer Section of The Website---------------------------->
+    <footer>
+        <div class="f-top">
+            <img  class="img" src="../media/logo.png" alt="">
+            <div class="fot-content">
+                <div class="nav nav-foot">
+                    <a href="../index.html">HOME</a>
+                    <a href="https://www.youtube.com">YOUTUBE</a>
+                    <a href="#section-2">PROJECTS</a>
+                    <a href="">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="back-base-1">
+                    <a class="social facebook" href="https://www.facebook.com/gthunter.in" style="color: rgb(0, 180, 255);" target="_blank">
+                        <i class="fab fa-facebook-f"> </i> Facebook</a>
+                    <a class="social youtube" href="https://www.youtube.com/channel/UCxVkR8P6jKJsGHDd6ftiBJw" style=" color:  rgb(223, 0, 0);" target="_blank">
+                        <i class="fab fa-youtube"> </i> Youtube</a>
+                    <a class="social instagram" href="https://www.instagram.com/gthunter.in/" style="color: rgb(255, 51, 153);" target="_blank">
+                        <i class="fab fa-instagram"> </i> Instagram</a>
+                    <a class="social twitter" href="https://twitter.com/YT_GTHunter" style="color: rgb(0, 219, 255);" target="_blank">
+                        <i class="fab fa-twitter"> </i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <i class="far fa-copyright"></i>
+            <h4>ROHIT TIWARI</h4>
+        </div>
+    </footer>
+
+</section>
+
+<script>
+    // Script for preloader
+    function loader() {
+    let preloader = document.getElementById("loading");
+    preloader.style.display = 'none';
+    }
+</script>
+</body>
+</html>
